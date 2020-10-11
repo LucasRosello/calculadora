@@ -8,8 +8,7 @@ import (
 	"strings"
 )
 
-type calc struct {
-}
+type calc struct{}
 
 func (calc) operate(entrada string, operador string) int {
 
@@ -38,7 +37,7 @@ func parsear(entrada string) int {
 	return numero
 }
 
-func leerEntrada() string {
+func LeerEntrada() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	return scanner.Text()
