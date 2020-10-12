@@ -13,8 +13,8 @@ type Calc struct{}
 func (Calc) Operate(entrada string, operador string) int {
 
 	numeros := strings.Split(entrada, operador)
-	numero0 := Parsear(numeros[0])
-	numero1 := Parsear(numeros[1])
+	numero0 := parsear(numeros[0])
+	numero1 := parsear(numeros[1])
 
 	switch operador {
 	case "+":
